@@ -4,7 +4,6 @@ body {
 
 .body-main {
     display: flex;
-    flex-direction: row-reverse;
     margin-top: 5px;
     margin-right: 5px;
     justify-content: space-between;
@@ -137,4 +136,30 @@ button{
     background-color: red;
     color: white;
     border: none;
+}
+/* smart Phone */
+@media(max-width:768px){
+    .body-main {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+        margin-right: 5px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .div-left {
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .div-right {
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        border-top-left-radius: 10px;
+    }
 }
